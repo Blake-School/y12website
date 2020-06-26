@@ -1,5 +1,5 @@
 
-
+/* Background image */
 
 body  {
   background-image: url("Images/wallpaperflare.com_wallpaper.jpg");
@@ -10,7 +10,7 @@ body  {
 }
 
 
- /* ---- set up site grid ---- */ 
+ /* grid setup */ 
 
  .wrapper {
 	display: grid;
@@ -25,11 +25,8 @@ body  {
 	grid-gap: 4px;
  }
 
- /* ---- end of grid setup ---- */
 
-
-
- /* -000- area styling -000- */
+ /* area styling  */
 
  .box {
 	border: solid 1px #000;
@@ -44,6 +41,8 @@ body  {
 
 .logo, .banner, .nav, .main, .footer {color: #fff;}
 
+/* Navigation tabs setup */
+
 .nav {
 	grid-area: nav;
 	background-color: #041822; /* Teal */
@@ -55,19 +54,21 @@ body  {
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    
 }
     
+/* Navigation links setup */
 
 .nav a {
-     float: left;
+  float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-    border-radius: 3px;
+  border-radius: 3px;
 }
+
+/* How navigation reacts when the mouse hovers over it */
 
 .nav a:hover {
      background-color: #ddd;
@@ -79,15 +80,20 @@ body  {
   color: white;
 }
 
+/* paragraph font setup */
+
 p {
     font-family: 'Oswald', sans-serif;
 }
 
+/* Header font setup */
 
 h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
+
+/* Logo image setup */
 
 .logo {
 	grid-area: logo;
@@ -99,8 +105,10 @@ h1 {
     height: 170px;
 }
 
+/* banner image setup */
+
 .banner {
-	grid-area: banner;
+	grid-area: banner;     
 	background-color: #315190;/* Dark blue */ 
     background: url(Images/Titanfall-2-09-HD.png);
     background-size: cover; 
@@ -110,16 +118,21 @@ h1 {
     width: auto;
 }
 
-
-
-
-
+/* Main content box styling */
 
 .main {
 	grid-area: main;
 	background-color: #043147; 
-	
 }
+
+/* Splits the index main box into 2 */
+
+.main.indexpage {
+    display: flex;
+    font-size: 20px;
+}
+
+/* footer styling */
 
 .footer {
 	grid-area: footer;
@@ -127,15 +140,14 @@ h1 {
 	background-color: #041822;
 }
 
-.parallax-1:hover {
-    height: 700px;
-    float: up;
-}
+/* aligns all iframes to centre */
 
+
+/* Parallax image setup for characters tab */
 
 .parallax-1 {
   background-image: url("Images/jack-cooper-titanfall-2-4k-1920x1080.jpg") ;
-  min-height: 300px; 
+  min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +156,7 @@ h1 {
  
 .parallax-2 {
   background-image: url("Images/maxresdefault-2.jpg") ;
-  min-height: 300px; 
+  min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -153,7 +165,7 @@ h1 {
 
 .parallax-3 {
   background-image: url("Images/Capture.PNG");
-  min-height: 300px; 
+  min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +174,16 @@ h1 {
 
 .parallax-4 {
   background-image: url("Images/respawn-entertainment-hethe-srodawa-callsign-sarah.jpg");
-  min-height: 300px; 
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-5 {
+  background-image: url("Images/Titanfall-2-Blisk-Apex-Legends-Character.jpg");
+  min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
